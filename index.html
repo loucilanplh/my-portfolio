@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101a35" />
+    <meta
+      name="description"
+      content="The portfolio of a York University cybersecurity student focused on AWS and cloud security."
+    />
+    <title> Loucila — Cloud Security Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Loucila, home">
+        <span class="wordmark-mark" aria-hidden="true">YN</span>
+        <span> Loucila <span class="wordmark-dot">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#work">Featured work</a>
+        <a href="#focus">Focus</a>
+        <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> YORK UNIVERSITY · CYBERSECURITY</p>
+          <h1 id="hero-title">Securing the<br /><span>cloud,</span> one layer<br />at a time.</h1>
+          <p class="hero-summary">
+            I’m a fourth-year cybersecurity student building practical experience in AWS cloud security, identity, and resilient systems.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Current focus">
+            <span><b>01</b> CLOUD SECURITY</span>
+            <span><b>02</b> AWS</span>
+            <span><b>03</b> SECURITY ANALYSIS</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract starry night sky illustration" role="img">
+          <div class="art-caption art-caption-top">FIELD NOTES / 2025—26</div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="moon"></div>
+          <div class="star star-a"></div><div class="star star-b"></div><div class="star star-c"></div>
+          <div class="star star-d"></div><div class="star star-e"></div><div class="star star-f"></div>
+          <div class="art-horizon"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="art-caption art-caption-bottom">OBSERVE · UNDERSTAND · PROTECT</div>
+          <div class="art-index">43°46′N<br />79°30′W</div>
+        </div>
+        <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="intro section-shell section-pad" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / A LITTLE ABOUT ME</p>
+          <span class="section-line"></span>
+        </div>
+        <div class="intro-grid">
+          <h2 id="about-title">Curious by nature.<br /><em>Careful by design.</em></h2>
+          <div class="intro-copy">
+            <p>
+              I’m studying cybersecurity at York University and working toward a career as a cloud security analyst. I’m interested in how identity, infrastructure, and good security decisions fit together in real systems.
+            </p>
+            <p>
+              My approach is hands-on: build a system, trace its data, question its trust boundaries, and document what I learn. This portfolio is a record of that practice.
+            </p>
+            <a class="text-link" href="#focus">What I’m focusing on <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section section-pad" id="work" aria-labelledby="work-title">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">02 / SELECTED WORK</p>
+            <span class="section-line"></span>
+            <span class="section-count">01 PROJECT</span>
+          </div>
+          <div class="work-title-row">
+            <h2 id="work-title">Built in the cloud.<br /><em>Reviewed through a security lens.</em></h2>
+            <p class="work-intro">A deployed serverless workflow, from PDF upload to converted images—with the architecture and security tradeoffs made visible.</p>
+          </div>
+
+          <article class="project-card" aria-labelledby="project-title">
+            <div class="project-visual">
+              <div class="project-visual-top"><span>CASE STUDY / 001</span><span class="live-pill"><i></i> DEPLOYED · TESTED</span></div>
+              <div class="flow-diagram" role="img" aria-label="Architecture flow: browser upload through API Gateway and Lambda to S3, SQS, converter Lambda, and output S3">
+                <div class="flow-node flow-browser"><span class="node-icon">⌘</span><span>WEB APP</span></div>
+                <div class="flow-arrow"><span>presigned URL</span><i></i></div>
+                <div class="flow-node flow-api"><span class="node-icon">↗</span><span>API GATEWAY</span></div>
+                <div class="flow-arrow"><span>upload PDF</span><i></i></div>
+                <div class="flow-node flow-s3"><span class="node-icon">▱</span><span>INPUT S3</span></div>
+                <div class="flow-down"><span>S3 event</span><i></i></div>
+                <div class="flow-lower">
+                  <div class="flow-node flow-sqs"><span class="node-icon">≋</span><span>SQS</span></div>
+                  <div class="flow-arrow"><span>trigger</span><i></i></div>
+                  <div class="flow-node flow-lambda"><span class="node-icon">λ</span><span>LAMBDA</span></div>
+                  <div class="flow-arrow"><span>write JPG</span><i></i></div>
+                  <div class="flow-node flow-output"><span class="node-icon">▱</span><span>OUTPUT S3</span></div>
+                </div>
+              </div>
+              <div class="project-visual-bottom"><span>AWS SERVERLESS WORKFLOW</span><span>PYTHON 3.12 · AP-SOUTHEAST-1</span></div>
+            </div>
+            <div class="project-content">
+              <div class="project-kicker"><span>01</span><span>SERVERLESS · AWS</span></div>
+              <h3 id="project-title">PDF to JPG<br />converter</h3>
+              <p class="project-description">
+                A serverless application that accepts PDF uploads and converts each page into a JPG. An event-driven pipeline connects API Gateway, Lambda, private S3 storage, and SQS. I deployed the system and verified the complete upload-to-image flow.
+              </p>
+              <div class="project-detail-grid">
+                <div><span class="detail-label">THE BUILD</span><p>API Gateway, Python Lambda, S3 event notifications, SQS, and a converter running in a private subnet with VPC endpoints.</p></div>
+                <div><span class="detail-label">THE SECURITY LENS</span><p>Private input and output storage, scoped Lambda permissions, short-lived presigned URLs, and clear trust boundaries between services.</p></div>
+              </div>
+              <div class="review-note">
+                <span class="review-icon" aria-hidden="true">↗</span>
+                <p><b>Next review areas</b> — Tighten CORS to known origins, evaluate upload authorization and file validation, and review logging, rate limits, and resource controls.</p>
+              </div>
+              <div class="tag-list" aria-label="Project technologies">
+                <span>AWS S3</span><span>Lambda</span><span>SQS</span><span>API Gateway</span><span>VPC Endpoints</span><span>Python</span>
+              </div>
+              <a class="text-link project-link" href="pdf-jpg-converter.md">Read the project notes <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="focus-section section-shell section-pad" id="focus" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 / AREAS OF FOCUS</p>
+          <span class="section-line"></span>
+        </div>
+        <div class="focus-layout">
+          <h2 id="focus-title">Learning to<br /><em>think in layers.</em></h2>
+          <div class="focus-list">
+            <article class="focus-item"><span class="focus-number">01</span><div><h3>Identity &amp; access</h3><p>IAM policies, scoped permissions, and service-to-service trust.</p></div><span class="focus-mark">✳</span></article>
+            <article class="focus-item"><span class="focus-number">02</span><div><h3>Cloud infrastructure</h3><p>AWS networking, storage boundaries, and private connectivity.</p></div><span class="focus-mark">✳</span></article>
+            <article class="focus-item"><span class="focus-number">03</span><div><h3>Detection &amp; response</h3><p>Building familiarity with cloud logs, event flows, and investigation.</p></div><span class="focus-mark">✳</span></article>
+            <article class="focus-item"><span class="focus-number">04</span><div><h3>Secure by design</h3><p>Finding practical ways to reduce exposure and limit impact.</p></div><span class="focus-mark">✳</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-sky" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="section-shell contact-inner">
+          <p class="eyebrow">04 / THE NEXT CONVERSATION</p>
+          <h2 id="contact-title">Good security starts<br />with <em>a conversation.</em></h2>
+          <p class="contact-copy">I’m open to connecting with cloud security teams, mentors, and fellow builders.</p>
+          <a class="button button-light" href="mailto:your.email@example.com">nplh0205.work@gmail.com <span aria-hidden="true">↗</span></a>
+          <p class="contact-note">Replace this example address with your preferred contact email.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <a class="wordmark" href="#top"><span class="wordmark-mark" aria-hidden="true">YN</span><span> Loucila's <span class="wordmark-dot">.</span></span></a>
+      <p>Made with curiosity in Toronto, Canada.</p>
+      <a class="back-top" href="#top">BACK TO TOP ↑</a>
+      <span class="copyright">© <span data-year></span> Loucila </span>
+    </footer>
+  </body>
+</html>
